@@ -1,0 +1,19 @@
+.Container{
+    background-color: #1E1E1E;
+    justify-content: center;
+    color: whitesmoke;
+    padding: 30px 30px;
+}
+@media screen  and (min-width: 740px){
+  .footerContainer{
+      margin: 0 ;
+      height: 80px;
+      padding: 30px ;
+  }
+}
+@media screen  and (min-width: 1280px){
+  .footerContainer{
+      padding: 30px;
+  }
+ 
+}

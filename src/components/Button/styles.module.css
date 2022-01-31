@@ -1,0 +1,111 @@
+.btnOutlined{
+  align-items: center;
+  background-color: #ffffff00;
+  border: 2px solid #A6F205;
+  border-radius: .25rem;
+  color: whitesmoke;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 500;
+  justify-content: center;
+  margin: 0;
+  padding: 6px 60px;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+   touch-action: manipulation;
+  vertical-align: baseline;
+  width: fit-content;
+}
+
+.btnOutlined:hover,
+.btnOutlined:focus {
+  border-color: #A6F205;
+  background-color: #A6F205;
+  color: black;
+}
+.btnOutlinedBlackText{
+  align-items: center;
+  background-color: #ffffff00;
+  border: 2.4px solid #A6F205;
+  border-radius: .25rem;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.2rem;
+  font-weight: 500;
+  justify-content: center;
+  margin: 0;
+  padding: 8px 60px;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+   touch-action: manipulation;
+  vertical-align: baseline;
+  width: fit-content;
+}
+.btnOutlinedBlackText:hover,
+.btnOutlinedBlackText:focus {
+  border-color: #A6F205;
+  background-color: #A6F205;
+  color: black;
+}
+.btnContained{
+  align-items: center;
+  background-color: #A6F205;
+  border: 2px solid #A6F205;
+  border-radius: .25rem;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.2rem;
+  font-weight: 500;
+  justify-content: center;
+  margin: 0;
+  padding: 8px 60px;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+   touch-action: manipulation;
+  vertical-align: baseline;
+  width: fit-content;
+  font-family: 'Montserrat', sans-serif;
+}
+.btnContained:hover,
+.btnContained:focus {
+  border-color: #A6F205;
+  background-color: #a7f20500;
+  color: black;
+}
+@media screen and (min-width: 740px) {
+  .btnOutlined{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 8px 70px;
+    vertical-align: baseline;
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .btnOutlined{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 8px 70px;
+    vertical-align: baseline;
+    width: fit-content;
+  }
+  .btnContained{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 8px 70px;
+    vertical-align: baseline;
+    width: fit-content;
+  }
+}

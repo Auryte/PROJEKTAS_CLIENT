@@ -1,0 +1,58 @@
+.MainContainer{
+  position: fixed;
+  background: #0000005d;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+.PopUpContainer{
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+  border-radius: 3px;
+  word-wrap: break-word;
+}
+.Close{
+  border: 2px solid #A6F205;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: whitesmoke;
+  margin-left: 80%;
+}
+.Close:hover{
+  background-color: #A6F205;
+  transition: all 0.2s ease-in;
+}
+.Content{
+  display: flex;
+  flex-direction: column;
+  justify-items: baseline;
+  align-items: center;
+  justify-content: space-between;
+  height: 170px;
+  margin: 20px;
+  line-height: 2rem;
+}
+@media (min-width: 740px) {
+  .Close{
+    margin-left: 90%;
+  }
+  .PopUpContainer{
+    width: 70%;
+  }
+  .Content{
+    height: 120px;
+  }
+}

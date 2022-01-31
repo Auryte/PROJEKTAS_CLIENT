@@ -1,0 +1,84 @@
+.aboutBox{
+  width: 100%;
+  background-color: #f7f7f7;
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+.aboutBox:after {
+  z-index: 0;
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  display:inline-block;
+  background: linear-gradient(to bottom, rgba(245, 245, 245, 0.5) 0%,rgba(0, 0, 0, 0.5) 100%); /* W3C */
+}
+.aboutImg{
+  filter: grayscale(100%);
+  overflow: hidden;
+  width: 100vw;
+}
+.aboutTextBox{
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(245, 245, 245, 0.8);
+  border-radius: 0.4rem;
+  padding: 20px;
+  z-index: 1;
+}
+.aboutTextBox p{
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 20px;
+  line-height: 22px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+.aboutTextBox h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+@media screen and (min-width: 900px) {
+  .aboutTextBox{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-15%, -50%);
+    width: 70%;
+    height: 600px;
+    background-color: rgba(245, 245, 245, 0.8);
+    border-radius: 10px;
+    padding: 35px;
+    z-index: 1;
+  }
+  .aboutTextBox p{
+    padding-top: 20px;
+    line-height: 35px;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  .aboutTextBox h1{
+    font-size: 3rem;
+    font-weight: 300;
+  }
+}
+@media screen and (min-width: 1280px){
+  .aboutTextBox{
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1580px){
+  .aboutImg{
+    text-align: center;
+    height: 800px;
+    overflow: hidden;
+    object-fit: cover;
+    width: 1300px;
+    margin: auto;
+  }
+  .aboutTextBox{
+    width: 40%;
+  }
+  }

@@ -1,0 +1,127 @@
+header {
+  position: absolute;
+  top: 0%;
+  position: fixed;
+  z-index: 1;
+}
+.navbar{
+  width: 100vw;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  padding: 0 200px;
+  background-color: rgba(185, 185, 185, 0.863);
+  box-shadow:  0 1px 10px 2px #5c5c5c;
+}
+.logo{
+  margin: 0;
+  height: 70px;
+ align-self: center;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}  
+.link {
+  color: #1E1e1e;
+  text-decoration: none;
+  font-size: 1.25rem;
+  margin-left: 3rem;
+}
+.link:hover{
+  color: black;
+  text-shadow: 1px 1px 1px grey;
+}
+.linkActive {
+  text-decoration: underline;
+}
+.mobileMenu {
+  display: none;
+}
+@media (max-width: 1450px) {
+  .navbar{
+    padding: 0 10%;
+  }
+  .link{
+  font-size: 1.15rem;
+  margin-left: 1.5rem;
+
+  }
+}
+@media (max-width: 1280px) {
+  .navbar{
+    padding: 0 10%;
+  }
+  .link{
+  font-size: 1.15rem;
+  margin-left: 1.5rem;
+
+  }
+}
+@media (max-width: 1080px) {
+  .navbar{
+    grid-template-columns: 1fr 5fr;
+    padding: 0 70px;
+  }
+  .link {
+    font-size: 1.1rem;
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 820px) {
+  /*Mobile View */
+  header {
+    position: unset;
+  }
+ .navbar {
+    padding: 0px 5%;
+    align-items: right;
+    margin: 0 auto;
+    position: unset;
+    width: 100%;
+  }
+   .navOptions {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    opacity: 0;
+    transition: all 0.8s ease;
+    flex-direction: column;
+    list-style-type: none;
+    grid-gap: 0px;
+  }
+  .navOptions.active {
+    background: rgba(245, 245, 245, 0.87);
+    top: 80px;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    align-content: center;
+    padding-left: 0px;
+  }
+  .menuIcon {
+    width: 40px;
+    height: 40px;
+    color: #1E1e1e;
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vw;
+    padding: 30px 0px;
+    margin: 0;
+  }
+  
+  .mobileMenu {
+    display: block;
+    text-align: right;
+  }
+ 
+}

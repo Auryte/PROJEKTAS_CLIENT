@@ -1,0 +1,95 @@
+.contactsMain{
+  min-height: calc(100vh - 330px);
+  display: flex;
+  flex-direction: column-reverse;
+  height: fit-content;
+}
+
+.TextBox{
+margin: 0;
+width: 100%;
+min-height: fit-content;
+height:250px;
+background-color: rgba(245, 245, 245, 0.87);
+padding: 20px;
+}
+.TextBox>ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: flex-start;
+  height: 100%;
+  margin: auto 50px;
+}
+.TextBox li{
+  list-style: none;
+  padding-bottom: 10px;
+  font-family:  'Montserrat', sans-serif;
+  text-decoration: none;
+  color: black;
+  }
+.TextBox h3{
+  padding-bottom: 15px;
+  padding-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+   margin-left: 30px;
+  }
+  .LogoContainer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    justify-items: flex-start;
+    width: 100%;
+  }
+  .Logo{
+    width: 70px;
+  }
+ 
+  .Icon{
+    margin-right: 20px;
+  }
+  @media screen and (min-width: 820px){
+    .TextBox{
+      margin: 10px auto;
+      border-radius: 0.4rem;
+      height: 60%;
+      position: absolute;
+      top: 150px;
+      left: 5%;
+      width: 40%;
+      box-shadow: 0 0 3px 1px rgb(155, 154, 154);
+   }
+   .contactsMain{
+    min-height: calc(100vh - 330px);
+    position: relative;
+  }
+  .TextBox li{
+    font-size: 0.9rem;
+ }
+  .TextBox>ul{
+       margin: auto 20px;
+       height: 70%;
+  }
+  }
+
+  @media screen and (min-width: 1450px){
+    .TextBox{
+      position: absolute;
+      top: 150px;
+      left: 11%;
+      width: 30%;
+   }
+   .contactsMain{
+    min-height: calc(100vh - 330px);
+    position: relative;
+  }
+  .TextBox li{
+     font-size: 1.1rem;
+  }
+  .TextBox>ul{
+    margin: auto 50px;
+  }
+  }

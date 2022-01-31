@@ -1,0 +1,123 @@
+.MainContainer{
+  margin: 50px 0 0 0;
+  min-height: calc(100vh - 200px);
+  height: fit-content;
+  width: 100%;
+  background-size: cover;
+  }
+  .InputContainer{
+   position: relative;
+   left: auto;
+   width: 100%;
+   height: 600px;
+   margin: 20px auto;
+}
+
+.InputContainer h2{
+   margin: auto ;
+   padding: 20px;
+   font-size: 2rem;
+   font-weight: 400;
+   color: #1E1e1e;
+    }
+
+.MainContainer .Field{
+    width: 90%;
+    padding: 10px;
+    margin: 25px auto ;
+    border: none;
+    border-radius: .25rem;;
+    box-shadow: 0 0 5px 1px rgb(155, 154, 154);
+    font-size: 1.2rem;
+    outline: none;
+     }
+.Form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      }
+
+.ButtonContainer{
+        margin: 70px;
+      }
+.ErrorContainer{
+  position: absolute;
+  top: 80px;
+  height: fit-content;
+  color: rgb(204, 2, 2);
+  font-size: 1rem;
+  margin: 0.3rem auto 0;
+  font-weight: 700;
+}
+.ErrorContainerScnd{
+  position: absolute;
+  top: 175px;
+  height: fit-content;
+  color: rgb(204, 2, 2);
+  font-size: 1rem;
+  margin: 0.3rem auto 0;
+  font-weight: 700;
+}
+.ErrorContainerLast{
+  position: absolute;
+  top: 335px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: fit-content;
+  color: rgb(204, 2, 2);
+  font-size: 1rem;
+  margin: 0.3rem auto ;
+  font-weight: 700;
+}
+.Message{
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: fit-content;
+  margin: 20px auto;
+  background-color: #A6F205;
+  padding: 8px 60px;
+  border-radius: .25rem;
+  animation: mymove 3s ease-out;
+}
+@keyframes mymove {
+  from {background-color: #A6F205;}
+  to {background-color: #a7f2052a;}
+}
+@media screen and (min-width: 740px){
+  .MainContainer{
+    margin: 150px 0 0 0;
+    min-height: calc(100vh - 230px);
+    width: 100%;
+    background-size: cover;
+    }
+  .InputContainer{
+    width: 60%;
+    height: 600px;
+    box-shadow: 0 0 5px 1px rgb(155, 154, 154);
+   }
+  .InputContainer h2{
+   margin: auto ;
+   padding: 50px 20px 30px 20px;
+   font-size: 2.5rem;
+   font-weight: 400;
+   color: #1E1e1e;
+    }
+   .MainContainer .Field{
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  .MainContainer{
+    margin: 150px 0 0 0;
+    }
+  .InputContainer{
+   width: 40%;
+   height: 600px;
+  }
+}

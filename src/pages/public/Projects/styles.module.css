@@ -1,0 +1,223 @@
+.projectsMain{
+  min-height: calc(100vh - 250px);
+  height: fit-content;
+  margin-top: 80px;
+}
+.projectsMain>h1{
+  margin-top: 100px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+}
+.projectsSubtitle{
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.projectCardContainer{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-content: center;
+  width: 90%;
+  height: fit-content;
+  margin: 70px auto 50px auto;
+  cursor: pointer;
+}
+.projectCardContainerReverse{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column-reverse;
+  width: 90%;
+  height: fit-content;
+  margin: 70px auto 50px auto;
+  cursor: pointer;
+}
+.projectImagesContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-right: 15px;
+}
+.projectMainImage{
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+.projectImgGrid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+ 
+}
+.projectImgGrid>img{
+  width: 100%;
+  border-radius: 8px;
+  height: 80px;
+  object-fit: cover;
+}
+.projectTextContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  text-align: left;
+  background-color: #F4F4F6;
+  border-radius: 8px;
+  min-height: 100%;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.projectTextContainer>h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+
+}
+.projectTextContainer p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  }
+  .projectLink{
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #93d602;
+    text-decoration: none;
+  }
+  @media screen and (min-width: 740px){
+    .projectCardContainer{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 90%;
+      height: fit-content;
+      margin: 100px auto 50px auto;
+    }
+     .projectCardContainerReverse{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 90%;
+      height: fit-content;
+      margin: 100px auto 50px auto;
+    }
+    .projectsMain>h1{
+      margin-top: 120px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      font-size: 4rem;
+    }
+    .projectTextContainer>h1{
+      font-size: 3rem;
+      font-weight: 300;
+      margin: 10px auto;
+    }
+    .projectTextContainer{
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+    .projectTextContainer p{
+      font-size: 1.25rem;
+      font-weight: 300;
+      line-height: 1.7rem;
+      }
+      .projectImagesContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin-right: 15px;
+      }
+      .projectImgGrid>img{
+        width: 100%;
+        border-radius: 10px;
+        height: 140px;
+        object-fit: cover;
+      }
+  }
+  @media screen and (min-width: 1280px){
+    .projectCardContainer{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      width: 1200px;
+      height: fit-content;
+      margin: 150px auto 50px auto;
+    }
+     .projectCardContainerReverse{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: row-reverse;
+      width: 1200px;
+      height: fit-content;
+      margin: 150px auto 50px auto;
+    }
+    .projectTextContainer{
+      margin-right: 15px;
+      margin-bottom: 0;
+    }
+    .projectTextContainer h1{
+      font-size: 2.5rem;
+      font-weight: 300;
+    }
+    .projectTextContainer p{
+      font-size: 1.25rem;
+      font-weight: 300;
+      line-height: 1.7rem;
+      }
+      .projectImagesContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        margin-right: 15px;
+      }
+      .projectImgGrid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+       
+      }
+      .projectImgGrid>img{
+        width: 100%;
+        border-radius: 10px;
+        
+        max-height: 100%;
+        object-fit: cover;
+      }
+  }
+  @media screen and (min-width: 1450px){
+    .projectTextContainer h1{
+      font-size: 3rem;
+      font-weight: 300;
+    }
+    .projectCardContainer{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      width: 1400px;
+      height: fit-content;
+      margin: 150px auto 50px auto;
+    }
+     .projectCardContainerReverse{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: row-reverse;
+      width: 1400px;
+      height: fit-content;
+      margin: 150px auto 50px auto;
+    }
+  }
