@@ -1,1 +1,1 @@
-export const domain = 'http://localhost:5000/api';
+export const domain = 'https://interdizainas.herokuapp.com/';
