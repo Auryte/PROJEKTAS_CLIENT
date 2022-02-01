@@ -25,7 +25,7 @@
 .MainContainer .Input{
     width: 100%;
     padding: 10px;
-    margin: 25px auto ;
+    margin: 15px auto 25px auto;
     border: none;
     border-radius: .25rem;;
     box-shadow: 0 0 5px 1px rgb(155, 154, 154);
@@ -36,13 +36,13 @@
 .InputDescription{
     width: 100%;
     padding: 10px;
-    margin: 25px auto ;
+    margin: 15px auto 25px auto;
     border: none;
     border-radius: .25rem;;
     box-shadow: 0 0 5px 1px rgb(155, 154, 154);
     font-size: 1.2rem;
     outline: none;
-    height: 200px;
+    height: 300px;
     overflow-y: auto;
     resize: none;
 }
@@ -54,6 +54,21 @@
     justify-content: center;
     align-items: center;
       }
+
+.InputContainer{
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.InputLabel{
+  align-self: flex-start;
+  font-weight: 500;
+  margin-top: 10px;
+}
 .InputImgPathContainer{
   display: none;
 }
@@ -93,7 +108,8 @@
 
 .ImageContainer{
   width: 80%;
-  height: 200px;
+  min-height: 200px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -129,7 +145,7 @@
 }
 .FieldArray .Input{
  margin-left: 0;
- margin-right: 20px;
+ margin: 25px 20px 25px 0;
 }
 .ArrayButtonContainer{
   position: relative;
@@ -140,10 +156,9 @@
   height: fit-content;
   color: rgb(204, 2, 2);
   font-size: 1rem;
-  margin: 0.3rem auto 0;
   font-weight: 700;
-  top: 80px;
-  margin: 0 auto;
+  top: 90px;
+  margin: 0.4rem auto;
 }
 
 .ErrDescription{
@@ -153,20 +168,11 @@
   font-size: 1rem;
   margin: 0.3rem auto 0;
   font-weight: 700;
-  margin: 0 auto;
-  top: 235px;
+  margin: 0.4 auto;
+  top: 345px;
 }
 
-.InputContainer{
-  position: relative;
-  width: 80%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-}
+
 .Error{
   top: 80px;
   margin: 0 auto;
@@ -230,16 +236,7 @@
       font-weight: 400;
       color: #1E1e1e;
        }
-       .ImageContainer{
-        width: 80%;
-        height: 200px;
-      }
-      .Image{
-        width: 300px;
-        object-fit: cover;
-        overflow: hidden;
-      }
-      .FileInput::before {
+       .FileInput::before {
         left: 5%;
         width: fit-content;
       }
@@ -262,18 +259,19 @@
   .InputsContainer{
    width: 80%;
    height: fit-content;
-
   }
-   .ImageContainer{
-    width: 80%;
-    height: 300px;
+  .ImageContainer{
+    width: 500px;
+    min-height: 400px;
+    height: fit-content;
   }
   .Image{
-    width: 400px;
-   
+    width: 500px;
+    object-fit: cover;
+    overflow: hidden;
   }
   .FileInput::before {
-    left: 30%;
+    left: 25%;
   }
 }
 @media screen and (min-width: 1450px){

@@ -27,20 +27,20 @@ const ItemForm = React.forwardRef((props, refOne) => {
         {({ errors, touched, values }) => (
           <Form className={styles.Form}>
             <div className={styles.InputContainer}>
+              <label htmlFor="title" className={styles.InputLabel}>Pavadinimas</label>
               <Field
                 className={styles.Input}
                 name="title"
-                placeholder="Pavadinimas"
                 type="text"
                 value={values.title}
               />
               {touched.title && errors.title && <div className={styles.ErrorContainer}>{errors.title}</div>}
             </div>
             <div className={styles.InputContainer}>
+              <label htmlFor="description" className={styles.InputLabel}>Aprašymas</label>
               <Field as="textarea"
                 className={styles.InputDescription}
                 name="description"
-                placeholder="Aprašymas"
                 type="textarea"
                 value={values.description}
               />
@@ -92,30 +92,30 @@ const ItemForm = React.forwardRef((props, refOne) => {
               )}
             </FieldArray>
             <div className={styles.InputContainer}>
+              <label htmlFor="seoUrl" className={styles.InputLabel}>Nuoroda (SEO url)</label>
               <Field
                 className={styles.Input}
                 name="seoUrl"
-                placeholder="SEO nuoroda"
                 type="text"
                 value={values.seoUrl}
               />
               {touched.seoUrl && errors.seoUrl && <div className={styles.ErrorContainer}>{errors.seoUrl}</div>}
             </div>
             <div className={styles.InputContainer}>
+              <label htmlFor="metaTitleTag" className={styles.InputLabel}>Meta antraštė</label>
               <Field
                 className={styles.Input}
                 name="metaTitleTag"
-                placeholder="Meta ntraštė"
                 type="text"
                 value={values.metaTitleTag}
               />
               {touched.metaTitleTag && errors.metaTitleTag && <div className={styles.ErrorContainer}>{errors.metaTitleTag}</div>}
             </div>
             <div className={styles.InputContainer}>
+              <label htmlFor="metaDescription" className={styles.InputLabel}>Meta aprašymas</label>
               <Field
                 className={styles.Input}
                 name="metaDescription"
-                placeholder="Meta aprašymas"
                 type="text"
                 value={values.metaDescription}
               />
