@@ -1,1 +1,1 @@
-export const domain = 'https://interdizainas.herokuapp.com/api';
+export const domain = 'https://inter-designs.herokuapp.com/api';
