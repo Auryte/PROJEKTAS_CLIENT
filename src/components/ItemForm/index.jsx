@@ -60,6 +60,7 @@ const ItemForm = React.forwardRef((props, refOne) => {
                 className={styles.FileInput}
                 name="image"
                 type="file"
+                accept="image/*"
                 value={values.image || ''}
                 innerRef={refOne}
                 onInput={() => handleInput(refOne.current.files[0])}

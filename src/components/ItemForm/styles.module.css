@@ -277,6 +277,6 @@
 @media screen and (min-width: 1450px){
  
   .FileInput::before {
-    left: 35%;
+    left: 33%;
   }
 }

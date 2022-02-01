@@ -41,7 +41,7 @@ const HeaderAdmin = () => {
         <nav className={click ? `${styles.navOptions} ${styles.active}` : `${styles.navOptions}`}>
           <NavLink to="/manage-projects" className={isLinkActive()} onClick={closeMobileMenu}> Projektai </NavLink>
           <NavLink to="/manage-articles" className={isLinkActive()} onClick={closeMobileMenu}> Straipsniai </NavLink>
-          <NavLink to="/" className={isLinkActive()} onClick={closeMobileMenu}> Į pagrindinį </NavLink>
+          <NavLink to="/" className={isLinkActive()} onClick={closeMobileMenu}> Pagrindinis </NavLink>
           <NavLink to={`profile/${users[0]?._id}`} className={isLinkActive()} onClick={closeMobileMenu}> Profilis </NavLink>
           <NavLink to="/login" className={isLinkActive()} onClick={logout}> Atsijungti </NavLink>
         </nav>

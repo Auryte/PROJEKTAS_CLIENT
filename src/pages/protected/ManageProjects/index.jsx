@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import useGetData from '../../../hooks/useGetData';
 import APIget from '../../../API/get';
 import API from '../../../API/delete';
 import TitleItem from '../../../components/ManageTitleForm';
 import Button from '../../../components/Button';
 import PopUp from '../../../components/PopUp';
-import styles from './styles.module.css';
+import ManageItemsTable from '../../../components/ManageItemsTable';
 
 const ManageProject = () => {
   const [isDeleted, setIsDeleted] = useState(false);
@@ -25,32 +24,18 @@ const ManageProject = () => {
     setIsDeleted(!isDeleted);
   };
   return (
-    <div className={styles.MainContainer} >
-      <div className={styles.BtnContainer}>
-        <h2>Projektai</h2>
-        <Link to='/create-project'>
-          <Button text='Kurti naują' className='btnOutlinedBlackText' />
-        </Link>
-      </div>
-      <table className={styles.Table}>
-        <thead className={styles.Thead}>
-          <tr>
-            <th>Pavadinimas</th>
-            <th>Data</th>
-          </tr>
-        </thead>
-        <tbody>
-          {projects.map(item => (
-            <TitleItem
-              key={item._id}
-              item={item}
-              onClick={() => handleClick(item._id, item.title)}
-              linkUpdate={`/update-project/${item.seoUrl}`}
-              linkView={`../interjero-dizainas/${item.seoUrl}`}
-            />
-          ))}
-        </tbody>
-      </table>
+    <>
+      <ManageItemsTable title='Projektai' link='/create-project'>
+        {projects.map(item =>
+          <TitleItem
+            key={item._id}
+            item={item}
+            onClick={() => handleClick(item._id, item.title)}
+            linkUpdate={`/update-project/${item.seoUrl}`}
+            linkView={`../interjero-dizainas/${item.seoUrl}`}
+          />
+        )}
+      </ManageItemsTable>
       { isPopUpOpen &&
         <PopUp
           content={
@@ -62,7 +47,8 @@ const ManageProject = () => {
           handleCloseCancel={() => setIsPopUpOpen(false)}
         />
       }
-    </div>
+
+    </>
   );
 };
 
