@@ -62,7 +62,7 @@
 }
 .ErrorContainerLast{
   position: absolute;
-  top: 335px;
+  top: 280px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -78,7 +78,7 @@
   font-size: 1.2rem;
   font-weight: 500;
   width: fit-content;
-  margin: 20px auto;
+  margin: 0 auto;
   background-color: #A6F205;
   padding: 8px 60px;
   border-radius: .25rem;
@@ -97,7 +97,7 @@
     }
   .InputContainer{
     width: 60%;
-    height: 600px;
+    height: 550px;
     box-shadow: 0 0 5px 1px rgb(155, 154, 154);
    }
   .InputContainer h2{
@@ -107,8 +107,14 @@
    font-weight: 400;
    color: #1E1e1e;
     }
+    .Form{
+     height: 350px;
+        }
    .MainContainer .Field{
     width: 60%;
+  }
+  .ErrorContainerLast{
+    top: 335px;
   }
 }
 
@@ -118,6 +124,6 @@
     }
   .InputContainer{
    width: 40%;
-   height: 600px;
+   height: 550px;
   }
 }

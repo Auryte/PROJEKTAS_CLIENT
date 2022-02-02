@@ -1,3 +1,37 @@
+## Interior Projects and Articles Gallery and  Management System Web Application
+
+•	Developed a mobile-friendly web application based on React for frontend, Node.js, Express and MongoDB for backend. 
+ The page of the interior projects gallery, where users can find many examples of interior projects and valuable articles on the technical side of the interior design. The page have an admin panel where logged in user - admin can add, remove, or modify projects and articles.	
+
+https://inter-designas.vercel.app/
+
+
+### Installing front-end React application
+
+The "client" directory contains the source code for your React app.
+
+ - In the "client" directory, run `npm install` to install its dependencies.
+ - In the "client" directory, run `npm start` to start your app.
+
+## Demo
+<a href="https://inter-designas.vercel.app/"> Demo : Inter-Design </a> <br>
+<a href="https://inter-designas.vercel.app/login"> Demo : Admin login </a> <br>
+
+## Set up project
+To run project you have to insert API keys in .env file by example in .env.example
+To specify these keys you have to register:
+* api key for Google maps : https://console.cloud.google.com/
+
+
+
+
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+<br>
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

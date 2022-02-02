@@ -54,7 +54,9 @@ text-decoration: none;
   padding-right: 20px;
   margin-top: 15px;
 }
-
+a{
+  text-decoration: none;
+}
 @media screen  and (min-width: 740px){
   .footerContainer{
       margin: 0 ;

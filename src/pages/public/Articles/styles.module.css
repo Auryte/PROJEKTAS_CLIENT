@@ -52,14 +52,22 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   padding-bottom: 50px;
-  font-size: 1.25rem;
-  line-height: 1.7rem;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
 }
+ 
 .articleBtnLink{
   text-align: center;
   text-decoration: none;
 }
-
+@media screen and (min-width: 740px){
+  .articleDescription{
+    font-weight: 300;
+    padding-bottom: 50px;
+    font-size: 1.25rem;
+    line-height: 1.7rem;
+  }
+}
 @media screen and (min-width: 1280px){
   .articleCardContainer{
     display: flex;
@@ -89,6 +97,7 @@
     margin-right:20px;
     margin-bottom: 0;
   }
+
   .articleMainImage{
     width: 55%;
     height: 100%;

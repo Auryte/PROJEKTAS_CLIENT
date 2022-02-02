@@ -81,10 +81,11 @@
 }
 .projectTextContainer p{
   font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 300;
-  line-height: 1.5rem;
+  line-height: 1.4rem;
   }
+ 
   .projectLink{
     margin-top: 30px;
     font-family: 'Montserrat', sans-serif;

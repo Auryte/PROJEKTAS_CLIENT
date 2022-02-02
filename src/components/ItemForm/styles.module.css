@@ -130,23 +130,27 @@
   display: none;
 }
 .ButtonContainer{
-        margin: 70px;
-      }
+    margin: 70px;
+  }
 .FieldArrayMain{
   width: 80%;
   margin-top: 20px;
 }
 .FieldArray{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
-
+  margin-bottom: 20px;
 }
 .FieldArray .Input{
  margin-left: 0;
- margin: 25px 20px 25px 0;
+ margin: 25px 0 ;
 }
+.FieldArray button{
+  width: 80vw;
+ }
 .ArrayButtonContainer{
   position: relative;
   margin-bottom: 20px;
@@ -172,7 +176,6 @@
   top: 345px;
 }
 
-
 .Error{
   top: 80px;
   margin: 0 auto;
@@ -185,7 +188,7 @@
   margin: 0.3rem auto 0;
   font-weight: 700;
   margin: 0 auto;
-  top: 50px;
+  top: 70px;
 }
 .ErrorContainerLast{
   position: absolute;
@@ -216,7 +219,26 @@
   background-color: #A6F205;
   transition: all 0.2s ease-in;
 }
+@media screen and (min-width: 480px){
+  .ErrArray{
+    top: 45px;
+  }
+}
 @media screen and (min-width: 740px){
+  .FieldArray{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .FieldArray .Input{
+    margin-left: 0;
+    margin: 25px 20px 25px 0;
+   }
+   .FieldArray button{
+    width: auto;
+   }
   .MainContainer{
     height: fit-content;
     width: 100%;
@@ -240,6 +262,9 @@
         left: 5%;
         width: fit-content;
       }
+      .ErrArray{
+        top: 50px;
+      }
 }
 @media (min-width: 820px) {
   .MainContainer{
@@ -247,6 +272,9 @@
     }
     .FileInput::before {
       left: 20%;
+    }
+    .ErrArray{
+      top: 50px;
     }
 }
 @media screen and (min-width: 1280px){
